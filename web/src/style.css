@@ -1,0 +1,55 @@
+@font-face {
+    font-family: KlinicSlab;
+    src: url("assets/fonts/KlinicSlabMedium.otf") format("opentype");
+}
+@font-face {
+    font-family: KlinicSlab;
+    font-style:italic;
+    src: url("assets/fonts/KlinicSlabMediumIt.otf") format("opentype");
+}
+@font-face {
+    font-family: KlinicSlab;
+    font-weight:bold;
+    src: url("assets/fonts/KlinicSlabBold.otf") format("opentype");
+}
+@font-face {
+    font-family: KlinicSlab;
+    font-weight:bold;
+    font-style:italic;
+    src: url("assets/fonts/KlinicSlabBoldIt.otf") format("opentype");
+}
+@font-face{
+    font-family: Avenir;
+
+    src:url('assets/fonts/avenir.eot'),
+    url('assets/fonts/avenir.otf');
+
+}
+@font-face{
+    font-family: Avenir;
+    font-weight:bold;
+    src:url('assets/fonts/avenirnext.eot'),
+    url('assets/fonts/avenirnext.otf');
+}
+@font-face{
+    font-family: Avenir;
+    font-weight:100;
+    src: url('assets/fonts/avenirnextcondensed.eot'),
+    url('assets/fonts/avenirnextcondensed.otf');
+}
+
+
+html *{
+
+    font-family: Avenir;
+
+}
+
+header .nav-container{
+    float:right;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: black;
+    background-color: #e8e8e8;
+}

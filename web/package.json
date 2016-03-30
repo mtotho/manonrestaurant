@@ -1,0 +1,43 @@
+{
+  "name": "manonRestaurant",
+  "description": "A package using naive versioning",
+  "author": "Michael Toth <mtotho@gmail.com>",
+  "dependencies": {
+    "body-parser": "~1.15.0",
+    "compression": "~1.6.1",
+    "cors": "~2.7.1",
+    "express": "~4.13.4",
+    "express-http-proxy": "~0.6.0",
+    "morgan": "~1.6.1",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-angular-templatecache": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-bump": "latest",
+    "gulp-csso": "latest",
+    "gulp-filter": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-inject": "latest",
+    "gulp-jscs": "latest",
+    "gulp-jshint": "latest",
+    "gulp-less": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-minify-html": "latest",
+    "gulp-ng-annotate": "latest",
+    "gulp-nodemon": "latest",
+    "gulp-plumber": "latest",
+    "gulp-print": "latest",
+    "gulp-rev": "latest",
+    "gulp-rev-replace": "latest",
+    "gulp-task-listing": "latest",
+    "gulp-uglify": "latest",
+    "gulp-useref": "latest",
+    "gulp-util": "latest",
+    "lodash": "latest",
+    "wiredep": "latest",
+    "yargs": "latest"
+  }
+}

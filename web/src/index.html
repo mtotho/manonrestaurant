@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+    <title>Manon</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body ng-app="manonRestaurant" ng-cloak ng-controller="AppCtrl as AppVm">
+
+
+
+    <header class="container">
+        <div>
+            <h1>Manon</h1>
+        </div>
+
+        <div class="nav-container">
+            <ul class="nav nav-pills">
+                <li role="presentation" ng-class="{'active':AppVm.CurrentState.name=='Home'}"><a ui-sref="Home">Home</a></li>
+                <li role="presentation" ng-class="{'active':AppVm.CurrentState.name=='Menu'}"><a ui-sref="Menu">Menu</a></li>
+                <li role="presentation" ng-class="{'active':AppVm.CurrentState.name=='Contact'}"><a ui-sref="Contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <div ui-view style="padding-bottom:600px;" class="container"></div>
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-4">
+                19 N Union St. Lambertville, NJ 08530
+            </div>
+            <div class="col-md-4">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"> (609) 397-2596</span>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <span style="font-weight:bold">Sun, Wed, Thu</span>
+                    </div>
+                    <div class="col-md-8">
+                        5:30 pm - 8:00 pm
+                    </div>
+
+                </div>
+
+               <div class="row">
+                   <div class="col-md-4">
+                       <span style="font-weight:bold">Fri, Sat</span>
+                   </div>
+                   <div class="col-md-8">
+                       5:30 pm - 9:00 pm
+                   </div>
+               </div>
+              <div class="row">
+                  <div class="col-md-4">
+                      <span style="font-weight:bold">Mon, Tue</span>
+                  </div>
+                  <div class="col-md-8">
+                      closed
+                  </div>
+              </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.29/angular.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.29/angular-animate.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.29/angular-sanitize.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.5.8/angular-filter.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.controller.js"></script>
+    <script src="routes.js"></script>
+
+    <script src="controllers/home/home.controller.js"></script>
+    <script src="controllers/menu/menu.controller.js"></script>
+    <script src="controllers/contact/contact.controller.js"></script>
+</body>
+</html>
